@@ -9,6 +9,7 @@ waluty = []
 for curr in json_check_data[0]['rates']:
     waluty.append(curr['code'])
 
+# Pobiera aktualny kurs danej waluty
 def currency_rate():
     global rate
     main_api = 'http://api.nbp.pl/api/exchangerates/rates/a/'
